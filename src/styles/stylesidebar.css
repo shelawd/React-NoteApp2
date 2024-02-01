@@ -1,0 +1,163 @@
+body {
+    background-color: #AC87C5;
+  }
+  
+  .wrapper {
+    display: flex;
+  }
+  
+  .side-bar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  
+  .side-bar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar-block {
+    margin-top: 10px;
+    background-color: #D8D9DA;
+    margin-bottom: 5px;
+    border-radius: 8px;
+  }
+
+  .sidebar-block:hover{
+    background-color: #9BA4B5;
+  }
+  
+  .add-note-btn {
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+  
+  .dotted-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px dotted #AC87C5;
+    color: #AC87C5;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 0 15px 33px;
+  }
+  
+  .dotted-btn:hover {
+    background-color: #AC87C5;
+    color: #fff;
+  }
+  
+  /* Navbar di bagian kanan */
+  .navbar {
+    margin-left: 200px;
+    color: white;
+    text-align: right;
+    
+  }
+
+  .navbar img {
+    height: 80px;
+    margin-left: 320px;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover, .navbar img:hover {
+    background-color: transparent;
+    border-radius: 0; 
+  }
+
+
+
+  .btn-search {
+    background-color: #E8D8C4;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .btn-search:hover {
+    background-color: #DBCC95;
+  }
+
+  .note-item {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--on-background);
+    border-top: 5px solid;
+  }
+  
+  .note-item__title {
+    margin: 4px 0;
+  }
+  
+  .note-item__createdAt {
+    color: var(--on-background-grey);
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  .note-item__body {
+    margin-top: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+
+.add-note-page-container {
+  max-width: 800px;
+  height: 480px;
+  margin-left: 430px;
+  margin-top: 30px;
+}
+
+.form {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.judul {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-body {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-submit {
+  background-color: #EBD9B4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-right: 400px;
+}
+
+.btn-submit:hover{
+  background-color: #DBCC95;
+}
