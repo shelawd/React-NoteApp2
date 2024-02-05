@@ -1,35 +1,32 @@
 /* style.css */
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #AC87C5;
+  font-family: "Arial", sans-serif;
+  background-color: #ac87c5;
   margin: 0;
   padding: 0;
 }
 
 .container {
   height: 100vh;
-  width: 80%; 
+  width: 80%;
   margin: auto;
-  padding: 20px; 
+  padding: 20px;
   box-sizing: border-box;
-  background-color: #FFE5E5; 
+  background-color: #ffe5e5;
 }
-
 
 .landing-teks {
   margin-top: 150px;
-  color: #2D3250;
+  color: #2d3250;
 }
-
 
 .note-container {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #F2F1EB;
+  background-color: #f2f1eb;
   border-radius: 20px;
-  
 }
 
 .note-title {
@@ -60,20 +57,20 @@ body {
 }
 
 .notes-list-container p {
-  background-color: #F2F1EB;
+  background-color: #f2f1eb;
   border-radius: 10px;
 }
 
 .get-start {
   text-decoration: none;
-  color: #2D3250;
-  background-color: #FFDD95;
+  color: #2d3250;
+  background-color: #ffdd95;
   padding: 10px;
   border-radius: 10px;
 }
 
 .get-start:hover {
-  background-color: #AC87C5;
+  background-color: #ac87c5;
 }
 
 .detail-note {
@@ -103,22 +100,22 @@ body {
 }
 
 .btn-delete {
-  background-color: #D24545; 
-  color: #fff; 
+  background-color: #d24545;
+  color: #fff;
   padding: 8px 12px;
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .btn-delete:hover {
-  background-color: #c82333; 
+  background-color: #c82333;
 }
 
 .btn-archive {
-  background-color: #597E52; 
-  color: #fff; 
+  background-color: #597e52;
+  color: #fff;
   padding: 8px 12px;
   border: none;
   cursor: pointer;
@@ -126,17 +123,15 @@ body {
 }
 
 .btn-archive:hover {
-  background-color: #43766C; 
-
+  background-color: #43766c;
 }
-
 
 .archived-notes {
   max-width: 800px;
   margin-left: auto;
   margin-right: 20px;
   margin-top: 20px;
-  background-color: #F2F1EB;
+  background-color: #f2f1eb;
 }
 
 .archived-list {
@@ -176,9 +171,136 @@ body {
   margin-top: 20px;
 }
 
+.register-pagee {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF7F1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);x
+}
+
+
+.register-inputt {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-inputt input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none; 
+  border-bottom: 1px solid #B47B84; 
+  font-size: 16px;
+  outline: none; 
+}
+
+.register-inputt input:focus {
+  border-bottom: 2px solid #944E63;
+}
+
+.register-inputt button {
+  background-color: #6962AD; 
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.register-inputt button:hover {
+  background-color: #5D3587; 
+}
+
+.register-pagee p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-pagee a {
+  color: #2196f3; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-pagee a:hover {
+  color: #0d47a1; 
+}
+
+/* Styling untuk komponen LoginInput */
+.login-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #B47B84;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-input input:focus {
+  border-bottom: 2px solid #944E63;
+}
+
+.login-input button {
+  background-color: #6962AD;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.login-input button:hover {
+  background-color: #5D3587;
+}
+
+/* Styling untuk komponen LoginPage */
+.login-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF7F1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.login-page p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-page a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-page a:hover {
+  color: #0d47a1;
+}
+
 
 @media (max-width: 768px) {
   .container {
-    width: 100%; 
+    width: 100%;
   }
 }

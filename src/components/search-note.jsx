@@ -1,9 +1,11 @@
-import React from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import '../styles/stylesidebar.css';
-import PropTypes from 'prop-types';
+import React from "react";
+import { useNavigate, Link } from "react-router-dom";
+import "../styles/stylesidebar.css";
+import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
-const Search = ({ keyword, keywordChange }) => {
+const Search = ({ keyword, keywordChange, logout, name }) => {
   const navigate = useNavigate();
 
   const handleKeywordChange = (e) => {
@@ -15,6 +17,10 @@ const Search = ({ keyword, keywordChange }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  };
+
+  const handleLogout = () => {
+    logout(); 
   };
 
   return (
@@ -32,6 +38,9 @@ const Search = ({ keyword, keywordChange }) => {
           onChange={handleKeywordChange}
         />
       </form>
+      <button className="logout-button" onClick={handleLogout}>{name}
+        <FontAwesomeIcon icon={faArrowRightFromBracket} /> Logout
+      </button>
     </nav>
   );
 };
@@ -39,6 +48,8 @@ const Search = ({ keyword, keywordChange }) => {
 Search.propTypes = {
   keyword: PropTypes.string.isRequired,
   keywordChange: PropTypes.func.isRequired,
+  logout: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default Search;
